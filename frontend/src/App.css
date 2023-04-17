@@ -107,3 +107,11 @@ label:nth-child(7) {
 .theme-container > label {
    margin-right: 5rem;
 }
+
+.info-ava > img {
+   width: 120px;
+}
+
+.pending {
+   color: rgba(44, 212, 199, 1);
+}

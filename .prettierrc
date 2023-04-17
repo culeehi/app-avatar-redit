@@ -14,10 +14,6 @@
     "singleQuote": true,
     "tabWidth": 3,
     "trailingComma": "all",
-
-
-
-    
     "useTabs": false,
     "vueIndentScriptAndStyle": false
 }

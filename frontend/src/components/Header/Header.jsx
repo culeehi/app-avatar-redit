@@ -26,9 +26,9 @@ const Header = (props) => {
                <div className="info-ava">
                   <img src={user.avatarUrl} />
                </div>
-               <div className="info-username">{user.name}</div>
-               <div className="info-age">{user.age}</div>
-               <div className="info-about">{user.about}</div>
+               <div className="info-username">Name : {user.name}</div>
+               <div className="info-age">Age : {user.age}</div>
+               <div className="info-about">Description : {user.about}</div>
             </div>
          </header>
       </>

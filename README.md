@@ -1,1 +1,0 @@
-# app-avatar-redit
