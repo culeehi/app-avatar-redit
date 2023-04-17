@@ -2,8 +2,8 @@
    display: flex;
    align-items: center;
    flex-direction: column;
-   background-color: #0c0c0c;
-   height: 100vh;
+
+   background-color: #6a646f;
 }
 .close {
    background-color: transparent;
@@ -27,7 +27,7 @@
    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
    background-color: #505050;
    border: none;
-   border-radius: 4px;
+   border-radius: 10px;
    color: white;
 }
 .input-container > textarea {
@@ -35,7 +35,7 @@
    height: 100px;
    background-color: #505050;
    border: none;
-   border-radius: 4px;
+   border-radius: 7px;
    color: white;
    margin: 1rem 0 1rem 0;
    text-align: start;
@@ -44,6 +44,7 @@
 .input-image-container {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 label:nth-child(7) {
@@ -76,4 +77,10 @@ label:nth-child(7) {
 .img-ctg {
    width: 30%;
    margin: 0 5px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.clickColor {
+   background-color: coral;
 }

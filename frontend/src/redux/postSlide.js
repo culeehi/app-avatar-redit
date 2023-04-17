@@ -5,9 +5,9 @@ export const postSlide = createSlice({
    initialState: {
       posts: [
          {
-            title: " ",
-            description: " ",
+            title: '',
             tag: 0,
+            description: '',
          },
       ],
    },

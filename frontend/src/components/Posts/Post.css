@@ -17,6 +17,9 @@
 
 .makepost-save {
    cursor: pointer;
+   background-color: #ab5130;
+   padding: 5px 20px;
+   border-radius: 10px;
 }
 .makepost-desc {
    background-color: #535353;
@@ -79,13 +82,19 @@
    flex-direction: column;
    font-size: 0.85rem;
    font-family: 'Noto Sans', sans-serif;
+   margin-top: 20px;
 }
 .posts {
-   background-color: rgb(49, 49, 49);
+   background-color: rgb(24 82 75);
    margin-bottom: 1rem;
    padding: 1rem 1rem 1rem 2rem;
    font-family: 'Noto Sans', sans-serif;
+   margin-top: 25px;
+   border-radius: 30px;
+   width: 95%;
+   margin: 10px 6px;
 }
+
 .posts-title {
    font-size: 1.15rem;
    font-weight: 700;
@@ -98,26 +107,32 @@
 .posts-tags {
    color: white;
    border: none;
-   margin: 0.75rem 0 0.75rem 0;
+   margin: 0px 18px;
    font-size: 0.75rem;
    font-family: 'Noto Sans', sans-serif;
    border-radius: 14px;
-   width: 50px;
    text-align: center;
    cursor: pointer;
+   padding: 5px 20px;
+   width: 85px;
 }
-/* .posts-tags-NSFW {
-   background-color: #78081c;
+.posts-tags-NSFW {
+   background-color: #72a0c1;
 }
 .posts-tags-Mood {
-   background-color: rgb(1, 111, 201);
+   background-color: #767853;
 }
 .posts-tags-Quotes {
-   background-color: rgb(183, 47, 224);
+   background-color: #d32730;
 }
-.posts-tags-Shitpost {
-   background-color: rgb(197, 186, 23);
+.posts-tags-ShitPost {
+   background-color: #6a397b;
 }
 .posts-tags-None {
    background-color: #c871d2;
-} */
+}
+
+.title-desc {
+   display: flex;
+   margin-bottom: 10px;
+}

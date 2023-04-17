@@ -3,7 +3,6 @@ import Input from '../InputFields/Input.jsx';
 import './EditPage.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateUsers } from '../../redux/apiRequests.js';
-// import { update } from '../../redux/userSlide.js';
 
 const EditPage = (props) => {
    const { setEdit } = props;
@@ -13,7 +12,7 @@ const EditPage = (props) => {
    });
 
    const avatarUrl = [
-      'https://preview.redd.it/rrz3hmsxcll71.png?width=640&crop=smart&auto=webp&s=87cc5ed38d8f088ef9fffef7a4c5756b64309d6a',
+      'https://i.redd.it/rrz3hmsxcll71.png',
       'https://preview.redd.it/fc9k38jwfwv51.png?auto=webp&s=9ce3d4c488091bb21969fd0fad7a6d89e4bfc50d',
       'https://preview.redd.it/se39g98mljw51.png?auto=webp&s=758dfe2b0a2df439b06b68533e763f413d58b46c',
       'https://preview.redd.it/5es1lne1du261.png?width=640&crop=smart&auto=webp&s=e6eb0ee5710710000e4fbace119112de63324a38',
@@ -41,7 +40,7 @@ const EditPage = (props) => {
          avatarUrl: url,
          themeColor: theme,
       };
-      updateUsers(updateUser, dispatch)
+      updateUsers(updateUser, dispatch);
    };
    return (
       <>
@@ -66,8 +65,15 @@ const EditPage = (props) => {
                   <div className="input-image-container">
                      {avatarUrl.map((url, index) => {
                         return (
-                           <div className="img-ctg" key={url}>
-                              <img src={url} className="input-image" alt="" onClick={(e) => setUrl(e.target.src)} />
+                           <div className="img-ctg" key={index}>
+                              <img
+                                 src={url}
+                                 className="input-image"
+                                 alt=""
+                                 onClick={(e) => {
+                                    setUrl(e.target.src);
+                                 }}
+                              />
                            </div>
                         );
                      })}

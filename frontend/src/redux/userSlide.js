@@ -3,11 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 export const userSlide = createSlice({
    name: 'user',
    initialState: {
-      name: 'CuLee hi',
+      name: 'CuLee Hi',
       age: '23',
       about: 'I am a software engineer',
-      avatarUrl:
-         'https://preview.redd.it/rrz3hmsxcll71.png?width=640&crop=smart&auto=webp&s=87cc5ed38d8f088ef9fffef7a4c5756b64309d6a',
+      avatarUrl: 'https://i.redd.it/rrz3hmsxcll71.png',
       themeColor: 'ff9051',
       pending: false,
       error: false,

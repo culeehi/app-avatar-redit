@@ -20,12 +20,13 @@ const Header = (props) => {
             }}
          >
             <div className="info-container">
-               <div className="info-edit" onClick={handleEdit}>
-                  Edit
-               </div>
                <div className="info-ava">
-                  <img src={user.avatarUrl} />
+                  <img alt="nice" src={user.avatarUrl} />
                </div>
+               <div className="info-edit" onClick={handleEdit}>
+                  Edit Profile
+               </div>
+
                <div className="info-username">Name : {user.name}</div>
                <div className="info-age">Age : {user.age}</div>
                <div className="info-about">Description : {user.about}</div>

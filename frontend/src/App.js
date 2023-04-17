@@ -5,6 +5,7 @@ import EditPage from './components/Edit/EditPage.jsx';
 import { useSelector } from 'react-redux';
 import PostNav from './components/PostNav/PostNav.jsx';
 import MakePost from './components/Posts/MakePost.jsx';
+import Posts from './components/Posts/Posts.jsx';
 
 function App() {
    const [isEdit, setEdit] = useState(false);
@@ -17,11 +18,20 @@ function App() {
 
    return (
       <div className="App">
-         {isEdit ? <EditPage setEdit={setEdit} /> : <Header setEdit={setEdit} />}
-         {pending && <h4 className="pending"> Vui Lòng chờ chút xíu nha </h4>}
-         {error && !isEdit && <h3 className="error"> Lỗi khi lấy dữ liệu từ máy chủ </h3>}
-         {isPost && <MakePost setPost={setPost} />}
-         <PostNav isPost={isPost} setPost={setPost} />
+         {isEdit ? (
+            <EditPage setEdit={setEdit} />
+         ) : !isEdit && !isPost ? (
+            <>
+               <Header setEdit={setEdit} />
+               <div className="post-container">{<Posts />}</div>
+               <PostNav isPost={isPost} setPost={setPost} />
+            </>
+         ) : (
+            <>{isPost && <MakePost setPost={setPost} />}</>
+         )}
+
+         {pending && <h2 className="pending"> Vui Lòng chờ chút xíu nha </h2>}
+         {error && !isEdit && <h2 className="error"> Lỗi khi lấy dữ liệu từ máy chủ </h2>}
       </div>
    );
 }
